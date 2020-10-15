@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love Calculator</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+  
+  </style>
+
 </head>
+
 <body>
-  <header>
-  <div class="calculator">
-    <div class="head">Check Your Love</div>
-    <div class="form-container">
-      <form action="#">
-        <input type="text" name="Yourname" id="Yourname" placeholder="Your Name" autocomplete="off">
-        <div class="plus" style="font-size: 30px;"><pre> + </pre></div>
-        <input type="text" name="Lovename" id="Lovename" placeholder="Love Name" autocomplete="off">
-      </form>
-      <button class="btn" onclick="Check()">Check</button>
-    </div>
-    <div class="result">
-    <input type="text" name="result" id="result" placeholder="Your Love Percentage">
-  </div>
-    <div class="footer">God Bless Your Love</div>
-  </div>
-</header>
-<footer style="background-color: black; bottom: 0;">
-  <p><em>We do not collect any of your data</em></p>
-</footer>
+  <header id="home">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">RockY</label>
+      <ul>
+        <li><a href="#">Calculator</a></li>
+        <li><a href="https://rakeshgombi.github.io/lovecalculator/" class="active">Love Calculator</a></li>
+        <li><a href="https://github.com/Rakeshgombi">Github Profile</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="calculator">
+        <div class="head">Check Your Love</div>
+        <div class="form-container">
+          <form action="#">
+            <input type="text" name="Yourname" id="Yourname" placeholder="Your Name" autocomplete="off">
+            <div class="plus" style="font-size: 30px;">
+              <pre> + </pre>
+            </div>
+            <input type="text" name="Lovename" id="Lovename" placeholder="Love Name" autocomplete="off">
+          </form>
+          <button class="btn" onclick="Check()">Check</button>
+        </div>
+        <div class="result">
+          <input type="text" name="result" id="result" placeholder="Your Love Percentage">
+        </div>
+        <div class="footer">God Bless Your Love</div>
+      </div>
+    </section>
+  </header>
+  <footer style="background-color: black; bottom: 0;">
+    <p><em>We do not collect any of your data</em></p>
+  </footer>
 
 
   <script src="JS/script.js"></script>
 </body>
+
 </html>
