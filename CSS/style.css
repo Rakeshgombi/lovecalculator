@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #000;
+}
+
+#home {
+  position: relative;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    top: 0;
+    width: 100%;
+    /* position: fixed; */
+  }
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+float: right;
+margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+a.active, a:hover{
+ background: #1b9bff; 
+ transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  nav{
+    position: fixed;
+    z-index: 100;
+  } 
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    }
+    a:hover, a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0px;
+    }
+}
+section{
+  background: url("../images/heart.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* z-index: -1; */
+}
+.calculator{
+  margin: auto;
+  position: absolute;
+  width: 40%;
+  text-align: center;
+  /* border: 2px solid red; */
+  background-color: white;
+}
+.head{
+  background-color: rgb(255, 0, 43);
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+.footer{
+  background-color: rgb(250, 239, 209);
+  padding: 10px;
+  font-size: 20px;
+}
+.form-container{
+  margin: 20px 0;
+}
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+form input{
+/* border-radius: 5px; */
+box-shadow: inset 0px 0px 3px rgb(255, 0, 0);
+border: none;
+width: 40%;
+padding: 10px 0;
+outline: none;
+text-align: center;
+}
+form input:hover,  form input:focus{
+
+  box-shadow: 0px 1px 5px 1px rgb(255, 0, 0);
+}
+input{
+font-size: 18px;
+}
+.result input{
+margin-bottom: 30px;
+background: none;
+outline: solid rgb(160, 160, 255);
+border: none;
+width: 50%;
+padding: 10px 0;
+
+text-align: center;
+}
+.btn{
+background-color: rgb(25, 165, 25);
+width: 30%;
+padding: 10px 0;
+outline: none;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+.btn:hover{
+box-shadow: 0px 1px 5px 1px black;
+}
+footer{background-color: black;
+color: white;
+bottom: 0;
+}
+footer p {
+padding: 5px;
+text-align: center;
+}
+/* calculator */
+@media only screen and (max-width: 800px) {
+
+  .calculator{
+    width: 90%;
+  }
+    form{
+  display: flex;
+  flex-direction: column;
+    }
+  form input{
+width: 70%;
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+input{
+  font-size: 14px;
+}
+} 
+
